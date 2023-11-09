@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #6779c0 50%);
+    min-height: 100vh;
+    font-family: monospace;
+}
+input::placeholder{
+    color:rgb(177, 177, 177);
+}
+li{
+    list-style: none;
+    font-size: 2rem;
+    background-color: #e4e9fda5;
+    /* border-bottom: 1px solid orange;  */
+    padding:1rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.15s;
+}
+li:hover{
+    transform: translateY(-3px);
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid green; */
+    border-radius: 10px;
+    height:90vh;
+    width:40%;
+    background-color: #1e084228 ;
+}
+
+.formContainer{
+    /* border:2px solid red; */
+    height: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weatherForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#cityInput{
+    height:3rem;
+    width: 15rem;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid rgb(247, 255, 17);
+    outline: none;
+    padding:1rem;
+    color:#fff;
+    font-size: larger;
+}
+
+button{
+    height: 3rem;
+    width:6rem;
+    background-color: rgb(247, 255, 17);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+
+}
+button:hover{
+    background-color: rgb(228, 180, 90);
+}
+.weatherIcon{
+    height:12rem;
+    width: 12rem;
+}
+
+.iconContianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 5px;
+}
