@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <div class="container">
+    <div class="formContainer">
+    <form action="/" method="post" class="weatherForm">
+ 
+        <div class="formInput">
+        <input type="text" name="cityName" id="cityInput" autocomplete="off" placeholder="Enter City">
+        <button type="submit" >Go</button>
+    </div>
+    </form>
+    </div>
+
+    <div class="weatherInfo">
+        <div class="iconContianer"><img class="weatherIcon" src="<%= weatherIcon %>" alt=""> </div>
+        
+        <div class="tempInfo">
+            <ul>
+                <li>Location " : <%= locationName%></li>
+                <li>Temperature: <%= temp%></li>
+                <li>Description: <%= description %> </li>
+                <li>Feels Like : <%= feelsLike%></li>
+                <li>Pressure " : <%= pressure%></li>
+                <li>Humidity " : <%= humidity%></li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    &#169 DanishSofi
+</footer>
+    
+</body>
+</html>
